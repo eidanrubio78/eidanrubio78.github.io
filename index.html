@@ -3,99 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eidan Rubio · Portfolio</title>
+<title>Inici · Eidan Rubio</title>
 <meta name="description" content="Portfolio digital IPO1 i Anglès — Eidan Rubio Valencia, SMX, Institut Sa Palomera">
-<style>
-:root{
-  --bg:#0b0d14; --bg2:#121623; --card:#171c2c; --line:#262c42;
-  --text:#e8eaf3; --muted:#9aa1ba; --accent:#9a8cf0; --accent2:#6fd3c4;
-  --radius:16px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
-body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
-
-/* NAV */
-header{position:sticky;top:0;z-index:20;background:rgba(11,13,20,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
-.logo{font-weight:700;letter-spacing:.3px}
-.logo span{color:var(--accent)}
-.menu{display:flex;gap:6px;align-items:center}
-.dd{position:relative}
-.dd>a{display:block;padding:8px 14px;color:var(--text);border-radius:8px;font-weight:600;font-size:.95rem}
-.dd>a::after{content:" ▾";font-size:.7rem;color:var(--muted)}
-.dd>a:hover{background:var(--card);text-decoration:none}
-.sub{position:absolute;top:100%;left:0;min-width:180px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px;display:none;box-shadow:0 12px 30px rgba(0,0,0,.4)}
-.sub a{display:block;padding:8px 12px;border-radius:8px;color:var(--muted);font-size:.92rem}
-.sub a:hover{background:var(--bg2);color:var(--text);text-decoration:none}
-.dd:hover .sub,.dd:focus-within .sub{display:block}
-.right{display:flex;align-items:center;gap:10px}
-.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
-.lang button{background:none;border:0;color:var(--muted);padding:6px 14px;font:inherit;font-size:.85rem;cursor:pointer}
-.lang button.on{background:var(--accent);color:#14102b;font-weight:700}
-.burger{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:6px 11px;font-size:1.1rem;cursor:pointer}
-@media(max-width:820px){
-  .burger{display:block}
-  .menu{display:none;position:absolute;top:64px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:10px 20px 16px;max-height:calc(100vh - 64px);overflow:auto}
-  .menu.open{display:flex}
-  .dd>a::after{content:""}
-  .sub{position:static;display:block;border:0;box-shadow:none;background:none;padding:0 0 6px 12px}
-}
-
-/* SECTIONS */
-section{padding:64px 0;border-top:1px solid var(--line)}
-section.alt{background:var(--bg2)}
-.num{color:var(--accent);font-weight:700;font-size:.85rem;letter-spacing:2px}
-h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.1;margin-bottom:18px}
-h1 em{font-style:normal;color:var(--accent)}
-h2{font-size:1.8rem;margin:6px 0 10px}
-.lead{font-size:1.15rem;color:var(--text);max-width:680px}
-.lead b{color:var(--accent)}
-.desc{color:var(--muted);max-width:680px;margin-bottom:28px}
-.hero{padding:80px 0 60px;border-top:0;background:radial-gradient(900px 400px at 80% -10%,rgba(154,140,240,.18),transparent),var(--bg)}
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.facts span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.88rem;color:var(--muted)}
-.contact{margin-top:34px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;max-width:520px}
-.contact h3{font-size:1rem;margin-bottom:6px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;gap:10px}
-.card h3{font-size:1.05rem}
-.card p{color:var(--muted);font-size:.93rem;flex:1}
-.badge{align-self:flex-start;font-size:.75rem;border-radius:999px;padding:3px 11px;background:rgba(255,255,255,.04);color:var(--muted);border:1px solid var(--line)}
-.ra{font-size:1.9rem;font-weight:800;color:var(--accent);line-height:1}
-.group{margin:34px 0 14px;font-size:1.05rem;color:var(--accent2)}
-footer{padding:34px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
   <div class="wrap">
     <nav>
-      <div class="logo">Eidan<span>.</span>Rubio</div>
+      <a class="logo" href="index.html">Eidan<span>.</span>Rubio</a>
       <div class="menu" id="menu">
         <div class="dd">
-          <a href="#inici" data-i18n="n_inici"></a>
+          <a href="index.html" class="on" data-i18n="n_inici"></a>
           <div class="sub">
-            <a href="#video" data-i18n="n_video"></a>
-            <a href="#carta" data-i18n="n_carta"></a>
-            <a href="#cv">CV</a>
+            <a href="video.html" data-i18n="n_video"></a>
+            <a href="carta.html" data-i18n="n_carta"></a>
+            <a href="cv.html">CV</a>
           </div>
         </div>
         <div class="dd">
-          <a href="#ipo1">IPO1</a>
-          <div class="sub">
-            <a href="#ra1">RA1</a><a href="#ra2">RA2</a><a href="#ra3">RA3</a><a href="#ra4">RA4</a><a href="#ra5">RA5</a>
-          </div>
+          <a href="ipo1.html">IPO1</a>
+          <div class="sub"><a href="ra1.html">RA1</a><a href="ra2.html">RA2</a><a href="ra3.html">RA3</a><a href="ra4.html">RA4</a><a href="ra5.html">RA5</a></div>
         </div>
         <div class="dd">
-          <a href="#angles" data-i18n="n_angles"></a>
+          <a href="angles.html" data-i18n="n_angles"></a>
           <div class="sub">
-            <a href="#evidencies" data-i18n="n_evid"></a>
-            <a href="#formal">Formal / Informal</a>
+            <a href="evidencies.html" data-i18n="n_evid"></a>
+            <a href="formal.html">Formal / Informal</a>
           </div>
         </div>
       </div>
@@ -109,150 +43,24 @@ footer{padding:34px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
     </nav>
   </div>
 </header>
-
 <main>
-
-<!-- INICI -->
-<section id="inici" class="hero">
-  <div class="wrap">
-    <h1><span data-i18n="hi"></span> <em>Eidan Rubio</em></h1>
-    <p class="lead" data-i18n-html="intro"></p>
-    <div class="facts">
-      <span data-i18n="f_age"></span>
-      <span data-i18n="f_study"></span>
-      <span data-i18n="f_live"></span>
-    </div>
-    <div class="contact">
-      <h3 data-i18n="contact"></h3>
-      <a href="mailto:e.rubio2@sapalomera.cat">e.rubio2@sapalomera.cat</a>
-    </div>
-  </div>
-</section>
-
-<section id="video" class="alt">
-  <div class="wrap">
-    <h2 data-i18n="n_video"></h2>
-    <p class="desc" data-i18n="video_desc"></p>
-    <div class="grid">
-      <div class="card"><span class="badge" data-i18n="pending"></span><h3 data-i18n="swot_t"></h3><p data-i18n="swot_d"></p></div>
-    </div>
-    <h3 class="group" data-i18n="smart_t"></h3>
-    <div class="grid">
-      <div class="card"><span class="badge" data-i18n="pending"></span><h3 data-i18n="g_personal"></h3></div>
-      <div class="card"><span class="badge" data-i18n="pending"></span><h3 data-i18n="g_prof"></h3></div>
-      <div class="card"><span class="badge" data-i18n="pending"></span><h3 data-i18n="g_eng"></h3></div>
-    </div>
-  </div>
-</section>
-
-<section id="carta">
-  <div class="wrap">
-    <h2 data-i18n="n_carta"></h2>
-    <p class="desc" data-i18n="carta_desc"></p>
-    <div class="grid"><div class="card"><span class="badge" data-i18n="pending"></span><p data-i18n="carta_card"></p></div></div>
-  </div>
-</section>
-
-<section id="cv" class="alt">
-  <div class="wrap">
-    <h2>CV</h2>
-    <p class="desc" data-i18n="cv_desc"></p>
-    <div class="grid"><div class="card"><span class="badge" data-i18n="pending"></span><p data-i18n="cv_card"></p></div></div>
-  </div>
-</section>
-
-<!-- IPO1 -->
-<section id="ipo1">
-  <div class="wrap">
-    <div class="num">IPO1</div>
-    <h2 data-i18n="ipo1_t"></h2>
-    <p class="desc" data-i18n="ipo1_d"></p>
-    <div class="grid">
-      <div class="card" id="ra1"><div class="ra">RA1</div><span class="badge" data-i18n="pending"></span></div>
-      <div class="card" id="ra2"><div class="ra">RA2</div><span class="badge" data-i18n="pending"></span><p data-i18n="ra2_d"></p></div>
-      <div class="card" id="ra3"><div class="ra">RA3</div><span class="badge" data-i18n="pending"></span></div>
-      <div class="card" id="ra4"><div class="ra">RA4</div><span class="badge" data-i18n="pending"></span></div>
-      <div class="card" id="ra5"><div class="ra">RA5</div><span class="badge" data-i18n="pending"></span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ANGLÈS -->
-<section id="angles" class="alt">
-  <div class="wrap">
-    <div class="num" data-i18n="n_angles"></div>
-    <h2 data-i18n="angles_t"></h2>
-    <p class="desc" data-i18n="angles_d"></p>
-
-    <h3 class="group" id="evidencies" data-i18n="evid_t"></h3>
-    <div class="grid">
-      <div class="card"><h3>1st term</h3><span class="badge" data-i18n="pending"></span></div>
-      <div class="card"><h3>2nd term</h3><span class="badge" data-i18n="pending"></span></div>
-      <div class="card"><h3>3rd term</h3><span class="badge" data-i18n="pending"></span></div>
-    </div>
-
-    <h3 class="group" id="formal">Formal / Informal</h3>
-    <div class="grid">
-      <div class="card"><span class="badge" data-i18n="pending"></span><p data-i18n="formal_d"></p></div>
-    </div>
-  </div>
-</section>
-
+<section class="hero"><div class="wrap">
+<h1><span data-i18n="hi"></span> <em>Eidan Rubio</em></h1>
+<p class="lead" data-i18n-html="intro"></p>
+<div class="facts"><span data-i18n="f_age"></span><span data-i18n="f_study"></span><span data-i18n="f_live"></span></div>
+<div class="contact"><h3 data-i18n="contact"></h3><a href="mailto:e.rubio2@sapalomera.cat">e.rubio2@sapalomera.cat</a></div>
+</div></section>
+<section class="explore"><div class="wrap">
+<h3 class="group" style="margin-top:0" data-i18n="explore"></h3>
+<div class="grid">
+<a class="card" href="video.html"><h3 data-i18n="n_video"></h3><p data-i18n="video_desc"></p></a>
+<a class="card" href="carta.html"><h3 data-i18n="n_carta"></h3><p data-i18n="carta_desc"></p></a>
+<a class="card" href="cv.html"><h3>CV</h3><p data-i18n="cv_desc"></p></a>
+<a class="card" href="ipo1.html"><h3>IPO1</h3><p data-i18n="ipo1_t"></p></a>
+<a class="card" href="angles.html"><h3 data-i18n="n_angles"></h3><p data-i18n="angles_t"></p></a>
+</div></div></section>
 </main>
-
 <footer><div class="wrap">© 2026 Eidan Rubio Valencia · Institut Sa Palomera</div></footer>
-
-<script>
-const T = {
-  ca: {
-    n_inici:"Inici", n_video:"Vídeo", n_carta:"Carta", n_angles:"Anglès", n_evid:"Evidències",
-    hi:"Hola, sóc",
-    intro:"Hola, em dic <b>Eidan Rubio Valencia</b> i sóc estudiant de SMX a l'<b>Institut Sa Palomera</b>. Visc a <b>Blanes</b>.",
-    f_age:"17 anys", f_study:"SMX · Institut Sa Palomera", f_live:"Blanes",
-    contact:"Informació de contacte",
-    pending:"Pendent",
-    video_desc:"El meu vídeo d'anàlisi SWOT i els meus objectius SMART.",
-    swot_t:"Vídeo d'anàlisi SWOT", swot_d:"Vídeo personal d'anàlisi SWOT del mòdul d'anglès professional.",
-    smart_t:"Objectius SMART", g_personal:"Personals", g_prof:"Professionals", g_eng:"Relacionats amb l'anglès",
-    carta_desc:"La meva carta de motivació.", carta_card:"Carta de motivació en preparació.",
-    cv_desc:"El meu currículum.", cv_card:"CV en preparació.",
-    ipo1_t:"Reflexió IPO1", ipo1_d:"Una reflexió per a cada resultat d'aprenentatge (RA) del mòdul Itinerari personal per a l'ocupabilitat.",
-    ra2_d:"Prevenció de riscos laborals · Pràctica 2: Ergonomia i salut laboral en el sector digital.",
-    angles_t:"Reflexió d'anglès professional", angles_d:"Evidències escrites i orals, i expressions formals i informals.",
-    evid_t:"Evidències escrites i orals", formal_d:"Taula d'expressions formals i informals."
-  },
-  en: {
-    n_inici:"Home", n_video:"Video", n_carta:"Letter", n_angles:"English", n_evid:"Evidence",
-    hi:"Hi, I'm",
-    intro:"Hello, my name is <b>Eidan Rubio Valencia</b> and I'm an SMX student at <b>Institut Sa Palomera</b>. I live in <b>Blanes</b>.",
-    f_age:"17 years old", f_study:"SMX · Institut Sa Palomera", f_live:"Blanes",
-    contact:"Contact information",
-    pending:"Pending",
-    video_desc:"My SWOT analysis video and my SMART goals.",
-    swot_t:"SWOT analysis video", swot_d:"Personal SWOT analysis video from the professional English module.",
-    smart_t:"SMART goals", g_personal:"Personal", g_prof:"Professional", g_eng:"English-related",
-    carta_desc:"My motivation letter.", carta_card:"Motivation letter in progress.",
-    cv_desc:"My résumé.", cv_card:"CV in progress.",
-    ipo1_t:"IPO1 Reflection", ipo1_d:"One reflection for each learning outcome (RA) of the Personal Employability Pathway module.",
-    ra2_d:"Occupational risk prevention · Practice 2: Ergonomics and occupational health in the digital sector.",
-    angles_t:"Professional English reflection", angles_d:"Written and oral evidence, and formal and informal expressions.",
-    evid_t:"Written and oral evidence", formal_d:"Chart of formal and informal expressions."
-  }
-};
-function setLang(l){
-  if(!T[l]) l="ca";
-  document.documentElement.lang=l;
-  document.querySelectorAll("[data-i18n]").forEach(e=>e.textContent=T[l][e.dataset.i18n]);
-  document.querySelectorAll("[data-i18n-html]").forEach(e=>e.innerHTML=T[l][e.dataset.i18nHtml]);
-  document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("on",b.dataset.lang===l));
-  try{localStorage.setItem("lang",l);}catch(_){}
-}
-document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
-const menu=document.getElementById("menu");
-document.getElementById("burger").addEventListener("click",()=>menu.classList.toggle("open"));
-menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>menu.classList.remove("open")));
-let saved=null;try{saved=localStorage.getItem("lang");}catch(_){}
-setLang(saved||"ca");
-</script>
+<script src="script.js"></script>
 </body>
 </html>
