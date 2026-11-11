@@ -5,16 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Anglès · Eidan Rubio</title>
 <meta name="description" content="Portfolio digital IPO1 i Anglès — Eidan Rubio Valencia, SMX, Institut Sa Palomera">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="vendor/lenis.css">
 <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+<div class="curtain" aria-hidden="true"></div>
+<div class="ambient" aria-hidden="true"><i></i><i></i></div>
 <header>
   <div class="wrap">
     <nav>
-      <a class="logo" href="index.html">Eidan<span>.</span>Rubio</a>
+      <a class="logo" href="index.html#inici">Eidan <span>Rubio</span></a>
       <div class="menu" id="menu">
         <div class="dd">
-          <a href="index.html" data-i18n="n_inici"></a>
+          <a href="index.html#inici" data-i18n="n_inici"></a>
           <div class="sub">
             <a href="video.html" data-i18n="n_video"></a>
             <a href="carta.html" data-i18n="n_carta"></a>
@@ -46,15 +51,23 @@
 <main>
 <div class="page"><div class="wrap">
 
-<h2 data-i18n="angles_t"></h2>
-<p class="desc" data-i18n="angles_d"></p>
+<div class="mono" data-reveal><span data-i18n="n_angles"></span></div>
+<h1 class="ptitle"><span data-i18n="angles_t"></span></h1>
+<p class="desc" data-i18n="angles_d" data-reveal></p>
 <div class="grid">
-<a class="card" href="evidencies.html"><h3 data-i18n="evid_t"></h3><p data-i18n="evid_d"></p></a>
-<a class="card" href="formal.html"><h3>Formal / Informal</h3><p data-i18n="formal_d"></p></a>
+<a class="card" href="evidencies.html"><span class="n">01</span><h3 data-i18n="evid_t"></h3><p data-i18n="evid_d"></p><span class="go" data-i18n="go"></span></a>
+<a class="card" href="formal.html"><span class="n">02</span><h3>Formal / Informal</h3><p data-i18n="formal_d"></p><span class="go" data-i18n="go"></span></a>
 </div>
 </div></div>
 </main>
-<footer><div class="wrap">© 2026 Eidan Rubio Valencia · Institut Sa Palomera</div></footer>
+<footer><div class="wrap">
+<div class="ghost" aria-hidden="true">EIDAN RUBIO</div>
+<div class="row"><span>© 2026 Eidan Rubio Valencia</span><span>Institut Sa Palomera · SMX</span></div>
+</div></footer>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
