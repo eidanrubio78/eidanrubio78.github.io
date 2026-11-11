@@ -5,21 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Inici · Eidan Rubio</title>
 <meta name="description" content="Portfolio digital IPO1 i Anglès — Eidan Rubio Valencia, SMX, Institut Sa Palomera">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
-<link rel="stylesheet" href="vendor/lenis.css">
 <link rel="stylesheet" href="style.css">
-<script type="importmap">{"imports":{"three":"./vendor/three.module.min.js"}}</script>
 </head>
 <body>
-<div class="curtain" aria-hidden="true"></div>
-<div class="ambient" aria-hidden="true"><i></i><i></i></div>
 <header>
   <div class="wrap">
     <nav>
-      <a class="logo" href="#inici">Eidan <span>Rubio</span></a>
+      <a class="logo" href="index.html">Eidan<span>.</span>Rubio</a>
       <div class="menu" id="menu">
         <div class="dd">
-          <a href="#inici" class="on" data-i18n="n_inici"></a>
+          <a href="index.html" class="on" data-i18n="n_inici"></a>
           <div class="sub">
             <a href="video.html" data-i18n="n_video"></a>
             <a href="carta.html" data-i18n="n_carta"></a>
@@ -49,36 +44,23 @@
   </div>
 </header>
 <main>
-<section id="intro" class="intro" aria-label="Intro">
-  <div class="intro-sticky">
-    <canvas id="laptop" aria-hidden="true"></canvas>
-    <div class="lbl" data-part="screen"><i></i><span data-i18n="l_screen"></span></div><div class="lbl" data-part="keys"><i></i><span data-i18n="l_keys"></span></div><div class="lbl" data-part="cpu"><i></i><span>CPU</span></div><div class="lbl" data-part="ram"><i></i><span>RAM</span></div><div class="lbl" data-part="ssd"><i></i><span>SSD</span></div><div class="lbl" data-part="fan"><i></i><span data-i18n="l_fan"></span></div><div class="lbl" data-part="board"><i></i><span data-i18n="l_board"></span></div><div class="lbl" data-part="bat"><i></i><span data-i18n="l_bat"></span></div><div class="lbl" data-part="bottom"><i></i><span data-i18n="l_bottom"></span></div>
-    <div class="chap" data-a="0.13" data-b="0.4"><div class="mono" data-i18n="c1_k"></div><h2><span data-i18n="c1_t"></span><span class="flourish" data-i18n="c1_f"></span></h2></div><div class="chap" data-a="0.46" data-b="0.79"><div class="mono" data-i18n="c2_k"></div><h2><span data-i18n="c2_t"></span><span class="flourish" data-i18n="c2_f"></span></h2></div><div class="chap" data-a="0.82" data-b="0.95"><div class="mono" data-i18n="c3_k"></div><h2><span data-i18n="c3_t"></span><span class="flourish" data-i18n="c3_f"></span></h2></div>
-    <div class="intro-hint"><b></b><span data-i18n="hint"></span></div>
-    <button class="skip" type="button" data-i18n="skip"></button>
-  </div>
-</section>
-<section id="inici" class="hero"><div class="wrap">
-<div class="mono" data-reveal data-i18n="eyebrow"></div>
-<h1><span class="line"><span data-i18n="h_l1"></span></span><span class="line"><span data-i18n="h_l2"></span></span><span class="line"><span class="flourish" data-i18n="h_fl"></span></span></h1>
-<p class="lead" data-i18n-html="intro" data-reveal></p>
-<div class="facts" data-reveal><span data-i18n="f_age"></span><span data-i18n="f_study"></span><span data-i18n="f_live"></span></div>
-<div class="contact" data-reveal><span class="mono" data-i18n="contact"></span><a href="mailto:e.rubio2@sapalomera.cat">e.rubio2@sapalomera.cat</a></div>
+<section class="hero"><div class="wrap">
+<h1><span data-i18n="hi"></span> <em>Eidan Rubio</em></h1>
+<p class="lead" data-i18n-html="intro"></p>
+<div class="facts"><span data-i18n="f_age"></span><span data-i18n="f_study"></span><span data-i18n="f_live"></span></div>
+<div class="contact"><h3 data-i18n="contact"></h3><a href="mailto:e.rubio2@sapalomera.cat">e.rubio2@sapalomera.cat</a></div>
 </div></section>
 <section class="explore"><div class="wrap">
-<div class="mono" data-reveal data-i18n="explore_k"></div>
-<h2 data-reveal><span data-i18n="explore_t"></span> <span class="flourish" data-i18n="explore_f"></span></h2>
-<div class="grid"><a class="card" href="video.html"><span class="n">01</span><h3 data-i18n="n_video"></h3><p data-i18n="video_desc"></p><span class="go" data-i18n="go"></span></a><a class="card" href="carta.html"><span class="n">02</span><h3 data-i18n="n_carta"></h3><p data-i18n="carta_desc"></p><span class="go" data-i18n="go"></span></a><a class="card" href="cv.html"><span class="n">03</span><h3>CV</h3><p data-i18n="cv_desc"></p><span class="go" data-i18n="go"></span></a><a class="card" href="ipo1.html"><span class="n">04</span><h3>IPO1</h3><p data-i18n="ipo1_t"></p><span class="go" data-i18n="go"></span></a><a class="card" href="angles.html"><span class="n">05</span><h3 data-i18n="n_angles"></h3><p data-i18n="angles_t"></p><span class="go" data-i18n="go"></span></a></div>
-</div></section>
+<h3 class="group" style="margin-top:0" data-i18n="explore"></h3>
+<div class="grid">
+<a class="card" href="video.html"><h3 data-i18n="n_video"></h3><p data-i18n="video_desc"></p></a>
+<a class="card" href="carta.html"><h3 data-i18n="n_carta"></h3><p data-i18n="carta_desc"></p></a>
+<a class="card" href="cv.html"><h3>CV</h3><p data-i18n="cv_desc"></p></a>
+<a class="card" href="ipo1.html"><h3>IPO1</h3><p data-i18n="ipo1_t"></p></a>
+<a class="card" href="angles.html"><h3 data-i18n="n_angles"></h3><p data-i18n="angles_t"></p></a>
+</div></div></section>
 </main>
-<footer><div class="wrap">
-<div class="ghost" aria-hidden="true">EIDAN RUBIO</div>
-<div class="row"><span>© 2026 Eidan Rubio Valencia</span><span>Institut Sa Palomera · SMX</span></div>
-</div></footer>
-<script src="vendor/gsap.min.js"></script>
-<script src="vendor/ScrollTrigger.min.js"></script>
-<script src="vendor/lenis.min.js"></script>
+<footer><div class="wrap">© 2026 Eidan Rubio Valencia · Institut Sa Palomera</div></footer>
 <script src="script.js"></script>
-<script type="module" src="intro.js"></script>
 </body>
 </html>
