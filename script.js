@@ -1,6 +1,6 @@
 const T = {
   ca: {
-    n_inici:"Inici", n_video:"Vídeo", n_carta:"Carta", n_angles:"Anglès", n_evid:"Evidències",
+    n_inici:"Inici", skip:"Saltar intro", n_video:"Vídeo", n_carta:"Carta", n_angles:"Anglès", n_evid:"Evidències",
     hi:"Hola, sóc",
     intro:"Hola, em dic <b>Eidan Rubio Valencia</b> i sóc estudiant de SMX a l'<b>Institut Sa Palomera</b>. Visc a <b>Blanes</b>.",
     f_age:"17 anys", f_study:"SMX · Institut Sa Palomera", f_live:"Blanes",
@@ -19,7 +19,7 @@ const T = {
     formal_d:"Taula d'expressions formals i informals."
   },
   en: {
-    n_inici:"Home", n_video:"Video", n_carta:"Letter", n_angles:"English", n_evid:"Evidence",
+    n_inici:"Home", skip:"Skip intro", n_video:"Video", n_carta:"Letter", n_angles:"English", n_evid:"Evidence",
     hi:"Hi, I'm",
     intro:"Hello, my name is <b>Eidan Rubio Valencia</b> and I'm an SMX student at <b>Institut Sa Palomera</b>. I live in <b>Blanes</b>.",
     f_age:"17 years old", f_study:"SMX · Institut Sa Palomera", f_live:"Blanes",

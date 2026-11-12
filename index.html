@@ -1,7 +1,8 @@
 <!doctype html>
-<html lang="ca">
+<html lang="ca" translate="no">
 <head>
 <meta charset="utf-8">
+<meta name="google" content="notranslate">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Inici · Eidan Rubio</title>
 <meta name="description" content="Portfolio digital IPO1 i Anglès — Eidan Rubio Valencia, SMX, Institut Sa Palomera">
@@ -11,10 +12,10 @@
 <header>
   <div class="wrap">
     <nav>
-      <a class="logo" href="index.html">Eidan<span>.</span>Rubio</a>
+      <a class="logo" href="index.html#inici">Eidan<span>.</span>Rubio</a>
       <div class="menu" id="menu">
         <div class="dd">
-          <a href="index.html" class="on" data-i18n="n_inici"></a>
+          <a href="index.html#inici" class="on" data-i18n="n_inici"></a>
           <div class="sub">
             <a href="video.html" data-i18n="n_video"></a>
             <a href="carta.html" data-i18n="n_carta"></a>
@@ -44,7 +45,15 @@
   </div>
 </header>
 <main>
-<section class="hero"><div class="wrap">
+<section id="intro" class="intro" aria-label="Intro">
+  <div class="intro-sticky">
+    <canvas id="seq" aria-hidden="true"></canvas>
+    <div class="intro-screen" aria-hidden="true"><span class="cmd">$ ./portfolio --start</span><b>SCROLL</b><i></i></div>
+    <div class="intro-hint"><span class="mouse"></span><span>Scroll</span></div>
+    <button class="skip" type="button" data-i18n="skip"></button>
+  </div>
+</section>
+<section id="inici" class="hero"><div class="wrap">
 <h1><span data-i18n="hi"></span> <em>Eidan Rubio</em></h1>
 <p class="lead" data-i18n-html="intro"></p>
 <div class="facts"><span data-i18n="f_age"></span><span data-i18n="f_study"></span><span data-i18n="f_live"></span></div>
@@ -62,5 +71,6 @@
 </main>
 <footer><div class="wrap">© 2026 Eidan Rubio Valencia · Institut Sa Palomera</div></footer>
 <script src="script.js"></script>
+<script src="intro.js"></script>
 </body>
 </html>
